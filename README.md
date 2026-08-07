@@ -42,8 +42,8 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-
-
+![one](../../image/file1)
+/home/jeevi/image/file1
 
 cat < file2
 ## OUTPUT
@@ -60,24 +60,6 @@ comm file1 file2
 diff file1 file2
 ## OUTPUT
 
-
-#Filters
-
-### Create the following files file11, file22 as follows:
-
-cat > file11
-```
-Hello world
-This is my world
-^d
-```
-cat > file22
-```
-1001 | Ram | 10000 | HR
-1002 | tom |  5000 | Admin
-1003 | Joe |  7000 | Developer
-^d
-```
 
 
 cut -c1-3 file11
