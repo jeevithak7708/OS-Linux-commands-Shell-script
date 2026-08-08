@@ -42,8 +42,8 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![Alt text](100.png)
 
-![Alt text](<Screenshot at 2026-08-02 09-22-27.png>)
 
 cat < file2
 ## OUTPUT
