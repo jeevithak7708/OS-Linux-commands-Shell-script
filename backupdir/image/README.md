@@ -42,8 +42,8 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
+![Alt text](100.png)
 
-![Alt text](image/100.png)
 
 cat < file2
 ## OUTPUT
@@ -52,17 +52,17 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- ![Alt text](image/compare.png)
+ ![Alt text](compare.png)
 comm file1 file2
  ## OUTPUT
-![Alt text](image/common.png)
 
+![Alt text](<Screenshot at 2026-08-02 09-22-27.png>)
 
  
 diff file1 file2
 ## OUTPUT
+![Alt text](different.png)
 
-![Alt text](image/different.png)
 #Filters
 
 ### Create the following files file11, file22 as follows:
@@ -85,17 +85,17 @@ cat > file22
 cut -c1-3 file11
 ## OUTPUT
 
-![Alt text](<image/cut c1 3 file11.png>)
 
+![Alt text](<cut c1 3 file11.png>)
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-![Alt text](<image/cut d 1.png>)
+![Alt text](<cut d 1.png>)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-![Alt text](<image/cut d 2.png>)
+![Alt text](<cut d 2.png>)
 
 cat < newfile 
 ```
@@ -110,49 +110,48 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-![Alt text](<image/grep Hello.png>)
+![Alt text](<grep Hello.png>)
 
 grep hello newfile 
 ## OUTPUT
 
-![Alt text](<image/grep hello.png>)
+![Alt text](<grep hello.png>)
 
 
 grep -v hello newfile 
 ## OUTPUT
-![Alt text](<image/grep -v.png>)
+![Alt text](<grep -v.png>)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-![Alt text](<image/grep -i.png>)
+![Alt text](<grep -i.png>)
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-![Alt text](<image/grep -i -c.png>)
+![Alt text](<grep -i -c.png>)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
-![Alt text](image/ubuntu1-1.png)
+![Alt text](ubuntu1-1.png)
+![Alt text](ubuntu1.png)
+![Alt text](<ubunutu 3.png>)
+![Alt text](ubuntu4.png)
 
-![Alt text](image/ubuntu2.png)
+![Alt text](ubuntu5.png)
+![Alt text](ubuntu6.png)
 
-![Alt text](<image/ubunutu 3.png>)
-
-![Alt text](image/ubuntu4.png)
-![Alt text](image/ubuntu5.png)
-![Alt text](image/ubuntu6.png)
-![Alt text](image/ubuntu7.png)
+![Alt text](ubuntu7.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-![Alt text](<image/grep -w.png>)
+![Alt text](<grep -w.png>)
 
 cat < newfile 
 ```
@@ -175,59 +174,59 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
+![Alt text](1.png)
 
-![Alt text](image/1.png)
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
+![Alt text](H%7Ch-1.png)
 
-![Alt text](image/H%7Ch.png)
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-![Alt text](image/2.png)
+![Alt text](2.png)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-![Alt text](<image/egrep helo.png>)
+![Alt text](<egrep helo.png>)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
+![Alt text](<egrep  world.png>)
 
-![Alt text](<image/egrep  world.png>)
 
 egrep '(World$)' newfile 
 ## OUTPUT
-![Alt text](<image/egrep  world.png>)
+![Alt text](<egrep  world.png>)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
+![Alt text](W%7Cw.png)
 
-![Alt text](image/W%7Cw-1.png)
 
 egrep '[1-9]' newfile 
 ## OUTPUT
+![Alt text](%5B1-9%5D-1.png)
 
-![Alt text](image/%5B1-9%5D-1.png)
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-![Alt text](image/5.png)
+![Alt text](5.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
-![Alt text](image/6.png)
 
+![Alt text](6.png)
 egrep l{2} newfile
 ## OUTPUT
-![Alt text](image/7.png)
+![Alt text](7.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-![Alt text](image/8.png)
+![Alt text](8.png)
 
 cat > file23
 ```
@@ -246,67 +245,67 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
-![Alt text](image/9.png)
+![Alt text](9.png)
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-![Alt text](image/10.png)
+![Alt text](10.png)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-![Alt text](image/11.png)
+![Alt text](11.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-![Alt text](image/12.png)
+![Alt text](12.png)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-![Alt text](image/13.png)
+![Alt text](13.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-![Alt text](image/14.png)
+![Alt text](14.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
-![Alt text](image/16-1.png)
 
+![Alt text](16.png)
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-![Alt text](image/17-1.png)
+![Alt text](17-1.png)
 seq 10 
 ## OUTPUT
 
-![Alt text](image/18.png)
 
+![Alt text](18.png)
 seq 10 | sed -n '4,6p'
 ## OUTPUT
+![Alt text](19.png)
 
-![Alt text](image/19.png)
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
-![Alt text](image/20.png)
 
+![Alt text](20.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-![Alt text](image/21.png)
+![Alt text](21.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-![Alt text](image/22.png)
+![Alt text](22.png)
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
@@ -314,11 +313,11 @@ seq 10 | sed '2,9c hello'
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
+![Alt text](23.png)
 
-![Alt text](image/23.png)
 sed -n '2,4{s/$/*/;p}' file23
 
-![Alt text](image/24.png)
+![Alt text](24.png)
 #Sorting File content
 cat > file21
 ```
@@ -330,8 +329,8 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
+![Alt text](25.png)
 
-![Alt text](image/25.png)
 cat > file22
 ```
 1001 | Ram | 10000 | HR
@@ -344,7 +343,7 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-![Alt text](image/26.png)
+![Alt text](26.png)
 
 #Using tr command
 
@@ -367,20 +366,16 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-![Alt text](<image/Screenshot at 2026-08-08 05-22-58.png>)
+
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![Alt text](image/31.png)
+
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![Alt text](<image/Screenshot at 2026-08-08 05-36-50.png>)
-
-![Alt text](image/32.png)
-![Alt text](image/33.png)
 
 
 mkdir backupdir
@@ -392,22 +387,10 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
-![Alt text](image/34.png)
-![Alt text](image/35.png)
-
-![Alt text](image/36.png)
-
-
-
-
-
 
 tar -xvf backup.tar
 ## OUTPUT
 
-![Alt text](image/37.png)
-![Alt text](image/38.png)
-![Alt text](image/39.png)
 gzip backup.tar
 
 ls .gz

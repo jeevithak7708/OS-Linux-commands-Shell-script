@@ -367,20 +367,16 @@ www. mrcet.... com
 cat urllist.txt | tr -d ' '
  ## OUTPUT
 
-![Alt text](<image/Screenshot at 2026-08-08 05-22-58.png>)
+
  
 cat urllist.txt | tr -d ' ' | tr -s '.'
 ## OUTPUT
-![Alt text](image/31.png)
+
 
 
 #Backup commands
 tar -cvf backup.tar *
 ## OUTPUT
-![Alt text](<image/Screenshot at 2026-08-08 05-36-50.png>)
-
-![Alt text](image/32.png)
-![Alt text](image/33.png)
 
 
 mkdir backupdir
@@ -392,22 +388,10 @@ cd backupdir
 tar -tvf backup.tar
 ## OUTPUT
 
-![Alt text](image/34.png)
-![Alt text](image/35.png)
-
-![Alt text](image/36.png)
-
-
-
-
-
 
 tar -xvf backup.tar
 ## OUTPUT
 
-![Alt text](image/37.png)
-![Alt text](image/38.png)
-![Alt text](image/39.png)
 gzip backup.tar
 
 ls .gz
