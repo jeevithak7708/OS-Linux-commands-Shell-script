@@ -42,8 +42,8 @@ s.n. dasgupta
 ### Display the content of the files
 cat < file1
 ## OUTPUT
-![one](../../image/file1)
-/home/jeevi/image/file1
+
+![Alt text](<Screenshot at 2026-08-02 09-22-27.png>)
 
 cat < file2
 ## OUTPUT
@@ -52,30 +52,50 @@ cat < file2
 # Comparing Files
 cmp file1 file2
 ## OUTPUT
- 
+ ![Alt text](compare.png)
 comm file1 file2
  ## OUTPUT
+
+![Alt text](<Screenshot at 2026-08-02 09-22-27.png>)
 
  
 diff file1 file2
 ## OUTPUT
+![Alt text](different.png)
 
+#Filters
+
+### Create the following files file11, file22 as follows:
+
+cat > file11
+```
+Hello world
+This is my world
+^d
+```
+cat > file22
+```
+1001 | Ram | 10000 | HR
+1002 | tom |  5000 | Admin
+1003 | Joe |  7000 | Developer
+^d
+```
 
 
 cut -c1-3 file11
 ## OUTPUT
 
 
-
+![Alt text](<cut c1 3 file11.png>)
 
 cut -d "|" -f 1 file22
 ## OUTPUT
 
-
+![Alt text](<cut d 1.png>)
 
 cut -d "|" -f 2 file22
 ## OUTPUT
-
+![Alt text](<cut d 2.png>)
 
 cat < newfile 
 ```
@@ -90,39 +110,48 @@ hello world
 grep Hello newfile 
 ## OUTPUT
 
-
+![Alt text](<grep Hello.png>)
 
 grep hello newfile 
 ## OUTPUT
 
-
+![Alt text](<grep hello.png>)
 
 
 grep -v hello newfile 
 ## OUTPUT
-
+![Alt text](<grep -v.png>)
 
 
 cat newfile | grep -i "hello"
 ## OUTPUT
 
-
+![Alt text](<grep -i.png>)
 
 
 cat newfile | grep -i -c "hello"
 ## OUTPUT
 
-
+![Alt text](<grep -i -c.png>)
 
 
 grep -R ubuntu /etc
 ## OUTPUT
 
+![Alt text](ubuntu1-1.png)
+![Alt text](ubuntu1.png)
+![Alt text](<ubunutu 3.png>)
+![Alt text](ubuntu4.png)
+
+![Alt text](ubuntu5.png)
+![Alt text](ubuntu6.png)
+
+![Alt text](ubuntu7.png)
 
 
 grep -w -n world newfile   
 ## OUTPUT
-
+![Alt text](<grep -w.png>)
 
 cat < newfile 
 ```
@@ -145,60 +174,59 @@ Linux is best in this World
  ```
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
-
-
+![Alt text](1.png)
 
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
-
+![Alt text](H%7Ch-1.png)
 
 
 egrep -w '(H|h)ell[a-z]' newfile 
 ## OUTPUT
 
-
+![Alt text](2.png)
 
 
 egrep '(^hello)' newfile 
 ## OUTPUT
-
+![Alt text](<egrep helo.png>)
 
 
 egrep '(world$)' newfile 
 ## OUTPUT
-
+![Alt text](<egrep  world.png>)
 
 
 egrep '(World$)' newfile 
 ## OUTPUT
-
+![Alt text](<egrep  world.png>)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
-
+![Alt text](W%7Cw.png)
 
 
 egrep '[1-9]' newfile 
 ## OUTPUT
-
+![Alt text](%5B1-9%5D-1.png)
 
 
 egrep 'Linux.*world' newfile 
 ## OUTPUT
-
+![Alt text](5.png)
 
 egrep 'Linux.*World' newfile 
 ## OUTPUT
 
-
+![Alt text](6.png)
 egrep l{2} newfile
 ## OUTPUT
-
+![Alt text](7.png)
 
 
 egrep 's{1,2}' newfile
 ## OUTPUT 
-
+![Alt text](8.png)
 
 cat > file23
 ```
@@ -217,68 +245,67 @@ cat > file23
 sed -n -e '3p' file23
 ## OUTPUT
 
-
+![Alt text](9.png)
 
 sed -n -e '$p' file23
 ## OUTPUT
 
-
+![Alt text](10.png)
 
 sed  -e 's/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](11.png)
 
 sed  -e '2s/Ram/Sita/' file23
 ## OUTPUT
 
-
+![Alt text](12.png)
 
 sed  '/tom/s/5000/6000/' file23
 ## OUTPUT
 
-
+![Alt text](13.png)
 
 sed -n -e '1,5p' file23
 ## OUTPUT
 
-
+![Alt text](14.png)
 
 sed -n -e '2,/Joe/p' file23
 ## OUTPUT
 
-
+![Alt text](16.png)
 
 
 sed -n -e '/tom/,/Joe/p' file23
 ## OUTPUT
 
-
-
+![Alt text](17-1.png)
 seq 10 
 ## OUTPUT
 
 
-
+![Alt text](18.png)
 seq 10 | sed -n '4,6p'
 ## OUTPUT
-
+![Alt text](19.png)
 
 
 seq 10 | sed -n '2,~4p'
 ## OUTPUT
 
-
+![Alt text](20.png)
 
 seq 3 | sed '2a hello'
 ## OUTPUT
 
-
+![Alt text](21.png)
 
 seq 2 | sed '2i hello'
 ## OUTPUT
 
-
+![Alt text](22.png)
 seq 10 | sed '2,9c hello'
 ## OUTPUT
 
@@ -286,11 +313,11 @@ seq 10 | sed '2,9c hello'
 sed -n '2,4{s/^/$/;p}' file23
 ## OUTPUT
 
-
+![Alt text](23.png)
 
 sed -n '2,4{s/$/*/;p}' file23
 
-
+![Alt text](24.png)
 #Sorting File content
 cat > file21
 ```
@@ -302,7 +329,7 @@ cat > file21
 ``` 
 sort file21
 ## OUTPUT
-
+![Alt text](25.png)
 
 cat > file22
 ```
@@ -316,7 +343,7 @@ cat > file22
 uniq file22
 ## OUTPUT
 
-
+![Alt text](26.png)
 
 #Using tr command
 
