@@ -47,7 +47,7 @@ cat < file1
 
 cat < file2
 ## OUTPUT
-
+![Alt text](image/file2.png)
 
 # Comparing Files
 cmp file1 file2
@@ -152,7 +152,8 @@ grep -R ubuntu /etc
 
 grep -w -n world newfile   
 ## OUTPUT
-![Alt text](<image/grep -w.png>)
+![Alt text](image/grepwn.png)
+
 
 cat < newfile 
 ```
@@ -176,7 +177,7 @@ Linux is best in this World
 egrep -w 'Hello|hello' newfile 
 ## OUTPUT
 
-![Alt text](image/1.png)
+![Alt text](<image/grep -w.png>)
 egrep -w '(H|h)ello' newfile 
 ## OUTPUT
 
@@ -200,7 +201,7 @@ egrep '(world$)' newfile
 
 egrep '(World$)' newfile 
 ## OUTPUT
-![Alt text](<image/egrep  world.png>)
+![Alt text](<image/egrep Word.png>)
 
 egrep '((W|w)orld$)' newfile 
 ## OUTPUT
@@ -331,7 +332,7 @@ cat > file21
 sort file21
 ## OUTPUT
 
-![Alt text](image/25.png)
+![Alt text](image/sort21.png)
 cat > file22
 ```
 1001 | Ram | 10000 | HR
@@ -412,10 +413,10 @@ gzip backup.tar
 
 ls .gz
 ## OUTPUT
- 
+ ![Alt text](image/gzip.png)
 gunzip backup.tar.gz
 ## OUTPUT
-
+![Alt text](image/gunzip.png)
  
 # Shell Script
 ```
@@ -485,7 +486,7 @@ echo $?
 ## OUTPUT 
 ./one
 bash: ./one: Permission denied
- ![Alt text](image/echo$?.png)
+ ![Alt text](image/echo.png)
 echo $?
 ## OUTPUT 
  
@@ -1050,6 +1051,7 @@ done
 $ chmod 777 argshift.sh
 
 ## OUTPUT
+![Alt text](image/arg1.png)
 $ ./argshift.sh 1 2 3
  
  cat argshift1.sh
